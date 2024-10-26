@@ -421,7 +421,7 @@ function AccountForm({
             />
                         <TextField
               name="payment_amount"
-              label="Account Number"
+              label="payment amount"
               value={accountInfo.additionalTextField7}
               onChange={handleInputChange}
               fullWidth
