@@ -1,0 +1,21 @@
+version: '3'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8070:8070"
+    networks:
+      - app-network
+    
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
